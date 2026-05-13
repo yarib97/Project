@@ -1,0 +1,62 @@
+/* *, *::before, *::after {
+  box-sizing: border-box;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Futura PT", Century, Arial, sans-serif;
+  font-size: 16px;
+}
+
+:root,
+:root.dark,
+:root.light 
+{
+  /* Theme Colors */
+  --background-color: #171717;
+  --primary-accent: #747474;
+  --secondary-accent: #404040;
+  --correct-color: #196522;
+  --partial-color: #DAC316;
+  /* Text */
+  --color-text: #2d3748; 
+  --color-text-light: #718096; 
+  --color-text-on-primary: #fff; 
+  /* States and feedback */
+  --color-success: #48bb78; 
+  --color-warning: #ed8936; 
+  --color-error: #f56565;
+  --color-disabled: #cbd5e0;
+}
+
+.layout {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  flex-direction: row;
+}
+.checkboxes, .load-checkboxes {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 22px rgba(0,0,0,0.3);
+  display: none;
+  width: 170%;
+  max-width: 700px;
+  margin-left: -75%;
+  box-sizing: border-box;
+}
+
+#checkboxes label:hover, #load-checkboxes label:hover {
+  transform: scale(1.02);
+}
+
+#checkboxes input[type="checkbox"], #load-checkboxes input[type="checkbox"] {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}

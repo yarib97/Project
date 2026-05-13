@@ -1,0 +1,28 @@
+.header-container {
+    position:relative;
+    padding: 5px;
+    margin: 0px;
+    background-color: var(--background-color);
+}
+
+.header {
+  display: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: var(--background-color);
+  color: white;
+  padding: 0%;
+  margin: 5px;
+}
+
+.header-subtitle {
+  display: absolute;
+  padding: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-style: italic;
+  background-color: var(--background-color);
+  color: white;
+}

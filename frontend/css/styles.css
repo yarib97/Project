@@ -1,0 +1,8 @@
+/* styles.css */
+@import url('./general.css');
+@import url('./sidebar.css');
+@import url('./main.css');
+@import url('./player.css');
+@import url('./header.css');
+@import url('./board.css');
+@import url('./keyboard.css');

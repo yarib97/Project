@@ -1,0 +1,71 @@
+.legend {
+  color: 'white';
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px); /* for Safari */
+  width: 400px;
+  height: 80px;
+  overflow-y: auto;
+  margin: 0;
+  background-color: var(--color-background-transparent);
+  bottom: 20px;
+  right: 20px;
+  border-radius: 20px;
+  z-index: 100;
+  display: none;
+  position: absolute;
+  padding: 4px 20px;
+}
+
+.legend .scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px; /* space above numbers */
+  padding: 0.5;
+}
+
+.legend .scale span {
+  font-size: 0.8rem;
+  color: white; /* or whatever text color you want */
+  white-space: nowrap;
+}
+
+.heat-legend {
+  height: 10px; width: 100%;
+  position: relative;
+  background: linear-gradient(to right, var(--color-min-heat), var(--color-heat));
+  border-radius: 5px; 
+  margin-bottom: 8px;
+}
+
+.electricity-legend {
+  position: relative;
+  height: 10px; width: 100%;
+  background: linear-gradient(to right, var(--color-min-electricity), var(--color-electricity));
+  border-radius: 5px; 
+  margin-bottom: 8px;
+}
+
+.legend-title {
+  margin: 0;
+  }
+
+.legend-title p {
+  margin: 2px;
+}
+
+#gradient-scale {
+  position: relative
+}
+
+.legend-indicator {
+  position: absolute;
+  top: 50%;                   /* center vertically in gradient bar */
+  transform: translate(-50%, -65%); /* center dot horizontally & vertically */
+  width: 15px;
+  height: 15px;
+  background-color: #ffffffdd;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px); /* for Safari */
+  border-radius: 50%;
+  border: none;
+}
