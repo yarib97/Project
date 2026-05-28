@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Kaho's Wordless</title>
+    <!-- <title>Kaho's Wordless</title> -->
+    <title>-</title>
     <link rel="icon" href="images/wordless-logo.png"/>
     <link
       rel="stylesheet"
@@ -13,69 +14,20 @@
     <div class="layout">
       <aside class="sidebar">
         <nav class="sidebar-content">
-          <div class="logo-wrapper">
+          <!-- <div class="logo-wrapper">
             <img src="images/wordless-logo.png" alt="Logo" class="icon" />
-          </div>
+          </div> -->
         </nav>
       </aside>
       <div class="main">
         <div class="header-container">
-          <p class="header">Kaho's Wordless</p>
-          <p class="header-subtitle">Happy birthday amorcito</p>
+          <p class="header">-</p>
+          <p class="header-subtitle">-</p>
+          <!-- <p class="header">Kaho's Wordless</p>
+          <p class="header-subtitle">Happy birthday amorcito</p> -->
         </div>
-        <!-- <div class="loading">
-          <article class="spinner"></article>
-        </div> -->
-        <div class="board-container">
-          <div class="board">
-            <div class="guess">
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-            </div>
-            <div class="guess">
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-            </div>
-            <div class="guess">
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-            </div>
-            <div class="guess">
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-            </div>
-            <div class="guess">
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-            </div>
-            <div class="guess">
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-              <div class="letter-guess">
-              </div>
-            </div>
+        <div id="board-container">
+          <div id="board">
           </div>
         </div>
         <div class="keyboard-container">
@@ -83,46 +35,46 @@
             <div id="empty-space"></div>
             <div class="navigation">
               <button id="less-btn">-</button>
-              <button id="number-btn"></button>
+              <div id="word-number">3</div>
               <button id="more-btn">+</button>
             </div>
             <div id="empty-space"></div>
           </div>
           <div class="keyboard">
             <nav class="key-row">
-              <button id="letter-btn">Q</button>
-              <button id="letter-btn">W</button>
-              <button id="letter-btn">E</button>
-              <button id="letter-btn">R</button>
-              <button id="letter-btn">T</button>
-              <button id="letter-btn">Y</button>
-              <button id="letter-btn">U</button>
-              <button id="letter-btn">I</button>
-              <button id="letter-btn">O</button>
-              <button id="letter-btn">P</button>
+              <button class="key" id="KeyQ">Q</button>
+              <button class="key" id="KeyW">W</button>
+              <button class="key" id="KeyE">E</button>
+              <button class="key" id="KeyR">R</button>
+              <button class="key" id="KeyT">T</button>
+              <button class="key" id="KeyY">Y</button>
+              <button class="key" id="KeyU">U</button>
+              <button class="key" id="KeyI">I</button>
+              <button class="key" id="KeyO">O</button>
+              <button class="key" id="KeyP">P</button>
             </nav>
             <nav class="key-row">
               <div id="empty-space"></div>
-              <button id="letter-btn">A</button>
-              <button id="letter-btn">S</button>
-              <button id="letter-btn">D</button>
-              <button id="letter-btn">F</button>
-              <button id="letter-btn">G</button>
-              <button id="letter-btn">H</button>
-              <button id="letter-btn">J</button>
-              <button id="letter-btn">K</button>
-              <button id="letter-btn">L</button>
+              <button class="key" id="KeyA">A</button>
+              <button class="key" id="KeyS">S</button>
+              <button class="key" id="KeyD">D</button>
+              <button class="key" id="KeyF">F</button>
+              <button class="key" id="KeyG">G</button>
+              <button class="key" id="KeyH">H</button>
+              <button class="key" id="KeyJ">J</button>
+              <button class="key" id="KeyK">K</button>
+              <button class="key" id="KeyL">L</button>
             </nav>
             <nav class="key-row">
-              <button id="enter-btn">ENTER</button>
-              <button id="letter-btn">Z</button>
-              <button id="letter-btn">X</button>
-              <button id="letter-btn">C</button>
-              <button id="letter-btn">V</button>
-              <button id="letter-btn">B</button>
-              <button id="letter-btn">N</button>  
-              <button id="letter-btn">M</button>
-              <button id="delete-btn">
+              <button class="key" id="Enter">ENTER</button>
+              <button class="key" id="KeyZ">Z</button>
+              <button class="key" id="KeyX">X</button>
+              <button class="key" id="KeyC">C</button>
+              <button class="key" id="KeyV">V</button>
+              <button class="key" id="KeyB">B</button>
+              <button class="key" id="KeyN">N</button>  
+              <button class="key" id="KeyM">M</button>
+              <button class="key" id="Backspace">
                 <img src="images/backspace.png" class="icon"/>
               </button>
             </nav>
@@ -131,6 +83,5 @@
       </div>
     </div>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script type="module" src="./js/main.js" defer></script>
 </html>

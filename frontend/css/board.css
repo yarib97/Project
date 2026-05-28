@@ -1,4 +1,4 @@
-.board-container {
+#board-container {
     display: flex;
     position: static;
     flex-direction: row;
@@ -8,7 +8,7 @@
     background-color: var(--background-color);
 }
 
-.board {
+#board {
     display: flex;
     position: static;
     flex-direction: column;
@@ -24,17 +24,37 @@
     align-items: center;
     height: 45px;
     padding: 5px;
+    padding-bottom: 0px;
     background-color: var(--background-color);
 }
 
-.letter-guess {
+.tile {
     box-sizing: border-box;
-    display: block;
+    display: flex;
     background-color: var(--secondary-accent);
     padding: 5px;
-    margin: 5px;
+    margin: 0px;
+    margin-right: 5px;
     width: 45px;
     height: 45px;
     border-width: 0px;
     border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    alignment-baseline: middle;
+}
+
+.correct {
+    background-color: #06b300 !important;
+}
+
+.present {
+    background-color: #b3b000 !important;
+}
+
+.absent {
+    background-color: var(--absent-accent) !important;
 }
