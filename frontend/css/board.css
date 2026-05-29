@@ -47,12 +47,108 @@
     alignment-baseline: middle;
 }
 
+#game-over-modal {
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    z-index: 1000; 
+    translate: -50% -50%;
+    width: 300px;
+    height: 200px;
+    background-color: var(--absent-accent);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.8);
+    visibility: hidden;
+}
+
+#end-game {
+    text-align: center;
+    alignment-baseline: middle;
+    color: white;
+    padding: 5px;
+    font-size: 1.75rem;
+    font-weight: bold;
+    top: 0%;
+    left: 0%;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#next-button {
+    background-color: var(--correct-color);
+    text-align: center;
+    alignment-baseline: middle;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 80px;
+    /* margin: 10px; */
+    top: 10%;
+    left: 50%;
+    translate: -50% -50%;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#solution {
+    color: white;
+    text-align: center;
+    alignment-baseline: middle;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#solution-title {
+    color: var(--color-text-light);
+    text-align: center;
+    alignment-baseline: middle;
+    font-size: 1rem;
+}
+
+
+#next-button:hover{
+  background-color: var(--hover-color);
+}
+
+.win {
+    background-color: var(--correct-color);
+}
+
+.lose {
+    background-color: var(--wrong-color);
+}
+
+#error-modal {
+    top: 35%;
+    left: 50%;
+    position: absolute;
+    translate: -50% -50%;
+    z-index: 1000;
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.8);
+    color: white;
+    font-weight: bold;
+    padding: 10px; 
+    font-size: 1rem;
+    background-color: var(--absent-accent);
+    border: none;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
 .correct {
-    background-color: #06b300 !important;
+    background-color: var(--correct-color) !important;
 }
 
 .present {
-    background-color: #b3b000 !important;
+    background-color: var(--partial-color) !important;
 }
 
 .absent {

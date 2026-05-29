@@ -114,7 +114,7 @@
   background-color: var(--hover-accent);
 }
 
-.navigation-container{
+#navigation-container{
   align-items: center;
   display: flex;
   flex-direction: row;

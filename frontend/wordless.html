@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kaho's Wordless</title>
+    <link rel="icon" href="images/wordless-logo.png"/>
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+    >
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <nav class="sidebar-content">
+          <!-- <div class="logo-wrapper">
+            <img src="images/wordless-logo.png" alt="Logo" class="icon" />
+          </div> -->
+        </nav>
+      </aside>
+      <div class="main">
+        <div class="header-container">
+          <p class="header">Kaho's Wordless</p>
+          <p class="header-subtitle">Happy birthday amorcito</p>
+        </div>
+        <div id="board-container">
+          <div id="board">
+          </div>
+          <div id="game-over-modal">
+            <div id="end-game">
+            </div>
+            <div id="result">
+              <p id="solution-title">
+                THE WORD WAS
+              </p>
+              <div id="solution">
+              </div>
+            </div>
+            <button id="next-button">
+              Next
+            </button>
+          </div>
+          <div id="error-modal">
+            WORD NOT FOUND
+          </div>
+        </div>
+        <div class="keyboard-container">
+          <div id="navigation-container">
+            <div id="empty-space"></div>
+            <div class="navigation">
+              <button id="less-btn">-</button>
+              <div id="word-number">3</div>
+              <button id="more-btn">+</button>
+            </div>
+            <div id="empty-space"></div>
+          </div>
+          <div class="keyboard">
+            <nav class="key-row">
+              <button class="key" id="KeyQ">Q</button>
+              <button class="key" id="KeyW">W</button>
+              <button class="key" id="KeyE">E</button>
+              <button class="key" id="KeyR">R</button>
+              <button class="key" id="KeyT">T</button>
+              <button class="key" id="KeyY">Y</button>
+              <button class="key" id="KeyU">U</button>
+              <button class="key" id="KeyI">I</button>
+              <button class="key" id="KeyO">O</button>
+              <button class="key" id="KeyP">P</button>
+            </nav>
+            <nav class="key-row">
+              <div id="empty-space"></div>
+              <button class="key" id="KeyA">A</button>
+              <button class="key" id="KeyS">S</button>
+              <button class="key" id="KeyD">D</button>
+              <button class="key" id="KeyF">F</button>
+              <button class="key" id="KeyG">G</button>
+              <button class="key" id="KeyH">H</button>
+              <button class="key" id="KeyJ">J</button>
+              <button class="key" id="KeyK">K</button>
+              <button class="key" id="KeyL">L</button>
+            </nav>
+            <nav class="key-row">
+              <button class="key" id="Enter">ENTER</button>
+              <button class="key" id="KeyZ">Z</button>
+              <button class="key" id="KeyX">X</button>
+              <button class="key" id="KeyC">C</button>
+              <button class="key" id="KeyV">V</button>
+              <button class="key" id="KeyB">B</button>
+              <button class="key" id="KeyN">N</button>  
+              <button class="key" id="KeyM">M</button>
+              <button class="key" id="Backspace">
+                <img src="images/backspace.png" class="icon"/>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./js/main.js" defer></script>
+</html>

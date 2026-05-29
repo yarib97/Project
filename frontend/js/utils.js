@@ -50,7 +50,7 @@ function resetStyles() {
   })
 }
 
-export function loadRandomWord(show=false) {
+export function getRandomNumber(show=false) {
     const number = Math.floor(Math.random() * 6)
     if (show){
       console.log('Random Number: ', number)
@@ -63,11 +63,15 @@ export function getCorrectWord(wordCount, correctWords) {
   return correctWord
 }
 
-export function checkWord(word, wordCount, validWords) {
+export function checkWord(word, wordCount, validWords, container) {
   const wordList = validWords[wordCount]
   const isValid = wordList.includes(word)
   if (!isValid) {
-    console.log(`${word} is not a valid word`)
+    container.style.visibility = 'visible'
+    setTimeout(
+      () => {
+        container.style.visibility = 'hidden'}
+      , 1000)
   }
   return isValid
 }

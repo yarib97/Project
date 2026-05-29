@@ -19,12 +19,15 @@ html, body {
   --primary-accent: #747474;
   --secondary-accent: #404040;
   --absent-accent: #2d2d2d;
-  --correct-color: #196522;
+  --correct-color: #149e24;
+  --hover-color: #0e6819;
+  --wrong-color: #C62121;
   --partial-color: #DAC316;
   --hover-accent: #606060;
+
   /* Text */
   --color-text: #2d3748; 
-  --color-text-light: #718096; 
+  --color-text-light: #b6b6b6; 
   --color-text-on-primary: #fff; 
   /* States and feedback */
   --color-success: #48bb78; 
